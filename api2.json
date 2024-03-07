@@ -1,0 +1,16 @@
+{
+    "WAFA_API" : {
+"SMS:Naaptol":{
+                "url":"https://m.naaptol.com/faces/jsp/ajax/ajax.jsp?actionname=checkMobileUserExists&mobile=",
+                "method":"POST",
+                "data":{
+                    "mobile_no":"+91{}",
+                    "allow_whatsapp":true,
+                    "auto_retry":false
+                },
+                "modifier_map":{"data":"mobile_no"},
+                "identifier":"transaction_id",
+                "sleep_time":10
+            },
+    }
+}
