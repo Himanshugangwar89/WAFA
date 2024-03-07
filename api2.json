@@ -3,10 +3,8 @@
     "SMS:SugarCosmetics": {
       "method": "POST",
       "url": "https://prod.api.sugarcosmetics.com/users/prod/v2/sendOtpn",
-      "modifier_map": { "data": "phone_no" },
-      "identifier": "resbody",
       "data": {
-        "phone_no": "{}",
+        "phone_no": "+91{}",
         "website": true,
         "is_guest_checkout": false
       }
