@@ -12,5 +12,17 @@
                 "identifier":"transaction_id",
                 "sleep_time":10
             },
+        "SMS:ConfirmTkt":{
+                "url":"https://securedapi.confirmtkt.com/api/platform/register?mobileNumber=",
+                "method":"POST",
+                "data":{
+                    "mobile_no":"+91{}",
+                    "allow_whatsapp":true,
+                    "auto_retry":false
+                },
+                "modifier_map":{"data":"mobile_no"},
+                "identifier":"transaction_id",
+                "sleep_time":10
+            },
     }
 }
