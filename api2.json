@@ -1,13 +1,57 @@
 {
   "WAFA_API": {
-    "SMS:SugarCosmetics": {
-      "method": "POST",
-      "url": "https://prod.api.sugarcosmetics.com/users/prod/v2/sendOtpn",
+    {
+  "SMS:OyoRooms": {
+    "url": "https://www.oyorooms.com/api/pwa/generateotp",
+    "method": "POST",
+    "params": {},
+    "headers": {},
+    "modifier_map": {
       "data": {
-        "phone_no": "+91{}",
-        "website": true,
-        "is_guest_checkout": false
+        "country_code": "cc",
+        "phone": "mob"
       }
-    }
+    },
+    "data": {
+      "country_code": "+{}",
+      "nod": "4",
+      "phone": "{}"
+    },
+    "sleep_time": 0,
+    "identifier": ""
+  },
+  "SMS:Delhivery": {
+    "url": "https://direct.delhivery.com/delhiverydirect/order/generate-otp",
+    "method": "POST",
+    "params": {},
+    "headers": {},
+    "modifier_map": {
+      "data": {
+        "phoneNo": "mob"
+      }
+    },
+    "data": {
+      "phoneNo": "{}"
+    },
+    "sleep_time": 0,
+    "identifier": ""
+  },
+  "SMS:ConfirmTkt": {
+    "url": "https://securedapi.confirmtkt.com/api/platform/register",
+    "method": "POST",
+    "params": {},
+    "headers": {},
+    "modifier_map": {
+      "data": {
+        "mobileNumber": "mob"
+      }
+    },
+    "data": {
+      "mobileNumber": "{}"
+    },
+    "sleep_time": 0,
+    "identifier": ""
+  }
+}
   }
 }
