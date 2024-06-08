@@ -1,57 +1,32 @@
 {
-  "WAFA_API": {
-    {
-  "SMS:OyoRooms": {
-    "url": "https://www.oyorooms.com/api/pwa/generateotp",
-    "method": "POST",
-    "params": {},
-    "headers": {},
-    "modifier_map": {
-      "data": {
-        "country_code": "cc",
-        "phone": "mob"
-      }
+  "WAFA_API": 
+  {
+    "SMS:OyoRooms": {
+        "url": "https://www.oyorooms.com/api/pwa/generateotp",
+        "method": "POST",
+        "headers": {},
+        "modifier_map": {"data": "mob"},
+        "data": {"phone": "{}"},
+        "sleep_time": 15,
+        "identifier": "OTP_SENT"
     },
-    "data": {
-      "country_code": "+{}",
-      "nod": "4",
-      "phone": "{}"
+    "SMS:Delhivery": {
+        "url": "https://direct.delhivery.com/delhiverydirect/order/generate-otp",
+        "method": "POST",
+        "headers": {},
+        "modifier_map": {"data": "mob"},
+        "data": {"phoneNo": "{}"},
+        "sleep_time": 15,
+        "identifier": "OTP_SENT"
     },
-    "sleep_time": 0,
-    "identifier": ""
-  },
-  "SMS:Delhivery": {
-    "url": "https://direct.delhivery.com/delhiverydirect/order/generate-otp",
-    "method": "POST",
-    "params": {},
-    "headers": {},
-    "modifier_map": {
-      "data": {
-        "phoneNo": "mob"
-      }
-    },
-    "data": {
-      "phoneNo": "{}"
-    },
-    "sleep_time": 0,
-    "identifier": ""
-  },
-  "SMS:ConfirmTkt": {
-    "url": "https://securedapi.confirmtkt.com/api/platform/register",
-    "method": "POST",
-    "params": {},
-    "headers": {},
-    "modifier_map": {
-      "data": {
-        "mobileNumber": "mob"
-      }
-    },
-    "data": {
-      "mobileNumber": "{}"
-    },
-    "sleep_time": 0,
-    "identifier": ""
-  }
+    "SMS:ConfirmTkt": {
+        "url": "https://securedapi.confirmtkt.com/api/platform/register",
+        "method": "POST",
+        "headers": {},
+        "modifier_map": {"data": "mob"},
+        "data": {"mobileNumber": "{}"},
+        "sleep_time": 15,
+        "identifier": "OTP_SENT"
+    }
 }
-  }
 }
